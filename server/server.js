@@ -32,10 +32,10 @@ app.post('/', async (req, res) => {
         const response = await openai.createCompletion ({
             model: "text-davinci-003",  //AI version
             prompt: `${prompt}`,        //We send the prompt that the user writes in our app
-            temperature: 0.1,
-            max_tokens: 60,
+            temperature: 0.2,
+            max_tokens: 120,
             top_p: 1,
-            frequency_penalty: 0.1,
+            frequency_penalty: 0.2,
             presence_penalty: 0,
 
 /*          temperature: 0.6,           //The risk AI takes when answering correct from 0 to 1 (0 low risk, 1 high risk)
